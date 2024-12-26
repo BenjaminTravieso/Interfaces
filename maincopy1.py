@@ -15,7 +15,7 @@ nav_frame = ctk.CTkFrame(root, width=200, height=700)
 nav_frame.grid(row=0, column=0, rowspan=4, sticky="nsw")
 
 nav_label = ctk.CTkLabel(nav_frame, text="Navegación", font=("Arial", 16, "bold"))
-nav_label.pack(pady=10)
+nav_label.pack(pady=40)
 
 # Botones del Panel de Navegación
 boton_grabar_formato = ctk.CTkButton(nav_frame, text="Grabar Formato")
@@ -53,7 +53,7 @@ tema_entry.grid(row=1, column=0, pady=5, padx=10)
 titulo_entry = ctk.CTkEntry(datos_frame, width=200, placeholder_text="Título")
 titulo_entry.grid(row=1, column=1, pady=5, padx=10)
 
-descripcion_entry = ctk.CTkEntry(datos_frame, width=400, height=100, placeholder_text="Descripción")
+descripcion_entry = ctk.CTkEntry(datos_frame, width=400, height=30, placeholder_text="Descripción")
 descripcion_entry.grid(row=2, column=0, columnspan=2, pady=5, padx=10)
 
 # Botón de Grabación
